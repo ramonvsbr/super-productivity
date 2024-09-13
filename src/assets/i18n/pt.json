@@ -1127,6 +1127,10 @@
         "CANCEL": "Somente tarefas futuras",
         "OK": "Atualizar todas as instancias"
       },
+      "D_CONFIRM_MOVE_TO_PROJECT": {
+        "MSG": "Há {{tasksNr} } instâncias criadas para esta tarefa repetível. Você quer mover todas elas para o projeto \" {{projectName} }\"?",
+        "OK": "Atualizar todas as instâncias"
+      },
       "D_EDIT": {
         "ADD": "Adicionar configuração de repetição de tarefas",
         "ADVANCED_CFG": "Configuração avançada",
@@ -1177,7 +1181,6 @@
         "TITLE": "Schedule"
       },
       "END": "Fim do trabalho",
-      "MENU_TITLE": "Schedule",
       "NOW": "agora",
       "NO_TASKS": "Atualmente não há tarefas. Adicione algumas tarefas através do botão + na barra superior.",
       "PLAN_END_DAY": "Planeje no final do dia",
@@ -1185,6 +1188,7 @@
       "START": "Início do Trabalho",
       "TASK_PROJECTION_INFO": "Projeção futura de uma tarefa repetível programada",
       "LUNCH_BREAK": "Intervalo para o almoço",
+      "MENU_TITLE": "Schedule",
       "S": {
         "CAL_PROVIDER_ERROR": "Erro do provedor de calibração da linha do tempo: {{errTxt}}"
       }
@@ -1434,7 +1438,28 @@
       "ZOOM_OUT": "Diminuir o zoom (somente para computador)"
     },
     "LANG": {
-      "LABEL": "Selecione um idioma"
+      "AR": "عربى",
+      "CZ": "Checo",
+      "DE": "Alemão",
+      "EN": "Inglês",
+      "ES": "Espanhol",
+      "FR": "Francês",
+      "HR": "Hrvatski",
+      "ID": "Indonésio",
+      "IT": "Italiano",
+      "JA": "日本語",
+      "KO": "한국어",
+      "LABEL": "Selecione um idioma",
+      "NB": "Norueguês Bokmål",
+      "NL": "Neerlandês",
+      "PL": "Polonês",
+      "PT": "Português",
+      "RU": "Russo",
+      "SK": "Eslovaco",
+      "TITLE": "Linguagem",
+      "TR": "Turco",
+      "ZH": "Chinês (chinês: 中文)",
+      "ZH_TW": "Chinês simplificado (繁體)"
     },
     "MISC": {
       "DEFAULT_PROJECT": "Projeto padrão a ser usado para tarefas se nenhum for especificado",
@@ -1474,6 +1499,8 @@
       "TITLE": "Configurações do Pomodoro"
     },
     "REMINDER": {
+      "IS_COUNTDOWN_BANNER_ENABLED": "Mostrar banner de contagem regressiva antes da data de vencimento dos lembretes.",
+      "COUNTDOWN_DURATION": "Mostrar aviso X antes do lembrete atual",
       "TITLE": "Lembretes"
     },
     "SOUND": {
@@ -1515,6 +1542,17 @@
       "CAL_PROVIDERS_INFO": "Você pode opcionalmente configurar a linha do tempo para também carregar e exibir dados do iCal (por exemplo, Google Agenda).",
       "L_CAL_PATH": "Url / caminho do arquivo para o calendário ICAL (opcional)"
     },
+    "TIME_TRACKING": {
+      "HELP": "O lembrete de controle de tempo é um banner que aparece caso você tenha esquecido de iniciar o controle de tempo.",
+      "L_DEFAULT_ESTIMATE": "Estimativa de tempo padrão para novas tarefas",
+      "L_DEFAULT_ESTIMATE_SUB_TASKS": "Estimativa de tempo padrão para novas subtarefas",
+      "L_IS_AUTO_START_NEXT_TASK": "Comece a rastrear a próxima tarefa ao marcar a atual como concluída",
+      "L_IS_NOTIFY_WHEN_TIME_ESTIMATE_EXCEEDED": "Notificar quando a estimativa de tempo for excedida",
+      "L_IS_TRACKING_REMINDER_ENABLED": "Lembrete de rastreamento habilitado",
+      "L_IS_TRACKING_REMINDER_SHOW_ON_MOBILE": "Mostrar lembrete de rastreamento no aplicativo móvel",
+      "L_TRACKING_REMINDER_MIN_TIME": "Tempo de espera antes de mostrar o banner de lembrete de rastreamento",
+      "TITLE": "Rastreamento de tempo"
+    },
     "TRACKING_REMINDER": {
       "HELP": "Configure um banner para ser exibido no caso de você se esquecer de iniciar o rastreamento de tempo.",
       "L_IS_ENABLED": "Ativado",
@@ -1552,24 +1590,29 @@
     "ADD_NEW_TASK": "Adicionar nova tarefa",
     "CREATE_PROJECT": "Criar Projeto",
     "CREATE_TAG": "Criar tag",
+    "DELETE_PROJECT": "Excluir Projeto",
     "DELETE_TAG": "Excluir tag",
     "GO_TO_TASK_LIST": "Ir para a lista de tarefas",
     "HM": {
+      "CALENDARS": "Como: conectar calendários",
       "CONTRIBUTE": "Contribuir",
       "GET_HELP_ONLINE": "Buscar ajuda online",
+      "KEYBOARD": "Como fazer: Teclado avançado",
       "REPORT_A_PROBLEM": "Reportar um problema",
+      "START_WELCOME": "Iniciar tour de boas-vindas",
+      "SYNC": "Como: Configurar a sincronização",
       "REDDIT_COMMUNITY": "Comunidade no Reddit"
     },
-    "MANAGE_PROJECTS": "Gerenciar projetos",
+    "NO_TAG_INFO": "Não há tags no momento. Você pode adicionar tags inserindo `#yourTagName` ao adicionar ou editar tarefas.",
     "HELP": "Ajuda",
     "METRICS": "Métricas",
     "NOTES": "Notas",
+    "NOTES_PANEL_INFO": "As notas só podem ser mostradas no calendário e nas visualizações de lista de tarefas frequentes.",
     "PROCRASTINATE": "Procrastinar",
     "PROJECTS": "Projetos",
     "PROJECT_MENU": "Menu Projeto",
     "PROJECT_SETTINGS": "Configurações do projeto",
     "QUICK_HISTORY": "História Rápida",
-    "SCHEDULED": "Programado",
     "SETTINGS": "Configurações",
     "SHOW_SEARCH_BAR": "Mostrar barra de pesquisa",
     "TAGS": "Tag",
@@ -1579,7 +1622,9 @@
     "TOGGLE_SHOW_NOTES": "Mostrar/ocultar notas do projeto",
     "TOGGLE_TRACK_TIME": "Iniciar/parar rastreamento de tempo ",
     "TRIGGER_SYNC": "Acionar a sincronização manualmente",
-    "WORKLOG": "Log de trabalho"
+    "WORKLOG": "Log de trabalho",
+    "MANAGE_PROJECTS": "Gerenciar projetos",
+    "SCHEDULED": "Programado"
   },
   "PDS": {
     "BACK": "Espere, eu esqueci uma coisa!",
@@ -1592,8 +1637,11 @@
       "OK": "Sim, sim! Desligar!"
     },
     "ESTIMATE_TOTAL": "Estimativa total:",
+    "EVALUATE_DAY": "Avaliar",
     "EXPORT_TASK_LIST": "Exportar lista de tarefas",
     "NO_TASKS": "Não há tarefas para este dia",
+    "PLAN_TOMORROW": "Plano",
+    "REVIEW_TASKS": "Analisar",
     "ROUND_15M": "Arredonde todas as tarefas para 15 minutos",
     "ROUND_30M": "Arredonde todas as tarefas para 30 minutos",
     "ROUND_5M": "Arredonde todas as tarefas para 5 minutos",
@@ -1604,11 +1652,13 @@
     "ROUND_UP_30M": "Arredonde todas as tarefas para 30 minutos",
     "ROUND_UP_5M": "Arredonde todas as tarefas para 5 minutos",
     "SAVE_AND_GO_HOME": "Salve e vá para inicio",
+    "SAVE_AND_GO_HOME_TOOLTIP": "Mova todas as tarefas concluídas para o arquivo (log de trabalho) e, opcionalmente, sincronize todos os dados e feche o aplicativo.",
     "START_END": "Começar – Fim",
     "SUMMARY_FOR": "Resumo diário para {{dayStr}}",
     "TASKS_COMPLETED": "Tarefas concluídas",
     "TIME_SPENT_AND_ESTIMATE_LABEL": "Tempo gasto / Estimado",
     "TIME_SPENT_ESTIMATE_TITLE": "Tempo gasto: Tempo total gasto hoje. Tarefas arquivadas não incluídas. – Tempo estimado: Tempo estimado para tarefas trabalhadas hoje menos o tempo já gasto com elas em outros dias.",
+    "TIME_SPENT_TODAY_BY_TAG": "Tempo gasto hoje por tag",
     "WEEK": "Semana",
     "EVALUATION": "Avaliação",
     "PLAN": "Plano",
@@ -1617,35 +1667,6 @@
   },
   "PM": {
     "TITLE": "Métricas do projeto"
-  },
-  "PP": {
-    "ARCHIVED_PROJECTS": "Projetos Arquivados",
-    "ARCHIVE_PROJECT": "Arquivar Projeto",
-    "CLICK_TO_HIDE": "Clique para ocultar o projeto do menu",
-    "CLICK_TO_SHOW": "Clique para mostrar o projeto no menu",
-    "DELETE_PROJECT": "Excluir projeto",
-    "D_CONFIRM_ARCHIVE": {
-      "MSG": "Tem certeza de que deseja arquivar este projeto? Projetos arquivados não serão mais exibidos no menu e você não poderá acessar nenhum dos dados deles sem restaurá-los. É recomendável que você faça backup dos seus dados antes de fazer isso.",
-      "OK": "Arquivo"
-    },
-    "D_CONFIRM_DELETE": {
-      "MSG": "Tem certeza de que deseja excluir este projeto? É recomendável fazer backup de seus dados antes de fazer isso.",
-      "OK": "Delete"
-    },
-    "D_CONFIRM_UNARCHIVE": {
-      "MSG": "Tem certeza de que deseja desarquivar este projeto?",
-      "OK": "Desarquivar"
-    },
-    "EDIT_PROJECT": "Editar Projeto",
-    "EXPORT_PROJECT": "Projeto de Exportação",
-    "GITHUB_CONFIGURED": "Integração do GitHub configurada",
-    "GITLAB_CONFIGURED": "Integração do GitLab configurada",
-    "IMPORT_FROM_FILE": "Importar do arquivo",
-    "JIRA_CONFIGURED": "Integração Jira configurada",
-    "OPEN_PROJECT_CONFIGURED": "Integração OpenProject configurada",
-    "S_INVALID_JSON": "Json inválido para o arquivo de projeto",
-    "TITLE": "Visão Geral do Projeto",
-    "UN_ARCHIVE_PROJECT": "Desarquivar projeto"
   },
   "PS": {
     "GLOBAL_SETTINGS": "Configurações globais",
@@ -1708,6 +1729,36 @@
     "RESET_BREAK_TIMER": "Reiniciar sem temporizador de pause",
     "TIME_ESTIMATED": "Tempo estimado:",
     "WITHOUT_BREAK": "Sem pausa:",
-    "WORKING_TODAY": "Trabalhando hoje:"
+    "WORKING_TODAY": "Trabalhando hoje:",
+    "WORKING_TODAY_ARCHIVED": "Tempo trabalhado hoje em tarefas arquivadas"
+  },
+  "PP": {
+    "ARCHIVED_PROJECTS": "Projetos Arquivados",
+    "ARCHIVE_PROJECT": "Arquivar Projeto",
+    "CLICK_TO_HIDE": "Clique para ocultar o projeto do menu",
+    "CLICK_TO_SHOW": "Clique para mostrar o projeto no menu",
+    "DELETE_PROJECT": "Excluir projeto",
+    "D_CONFIRM_ARCHIVE": {
+      "MSG": "Tem certeza de que deseja arquivar este projeto? Projetos arquivados não serão mais exibidos no menu e você não poderá acessar nenhum dos dados deles sem restaurá-los. É recomendável que você faça backup dos seus dados antes de fazer isso.",
+      "OK": "Arquivo"
+    },
+    "D_CONFIRM_DELETE": {
+      "MSG": "Tem certeza de que deseja excluir este projeto? É recomendável fazer backup de seus dados antes de fazer isso.",
+      "OK": "Delete"
+    },
+    "D_CONFIRM_UNARCHIVE": {
+      "MSG": "Tem certeza de que deseja desarquivar este projeto?",
+      "OK": "Desarquivar"
+    },
+    "EDIT_PROJECT": "Editar Projeto",
+    "EXPORT_PROJECT": "Projeto de Exportação",
+    "GITHUB_CONFIGURED": "Integração do GitHub configurada",
+    "GITLAB_CONFIGURED": "Integração do GitLab configurada",
+    "IMPORT_FROM_FILE": "Importar do arquivo",
+    "JIRA_CONFIGURED": "Integração Jira configurada",
+    "OPEN_PROJECT_CONFIGURED": "Integração OpenProject configurada",
+    "S_INVALID_JSON": "Json inválido para o arquivo de projeto",
+    "TITLE": "Visão Geral do Projeto",
+    "UN_ARCHIVE_PROJECT": "Desarquivar projeto"
   }
 }
